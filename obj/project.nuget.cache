@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "yK3gxOBVmfw=",
+  "dgSpecHash": "ebjJ/SjU/Yc=",
   "success": true,
   "projectFilePath": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/UniversiteOgrenciYonetimSistemi.csproj",
   "expectedPackageFiles": [
+    "/Users/beyza/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512",
     "/Users/beyza/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/beyza/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "/Users/beyza/.nuget/packages/microsoft.codeanalysis.analyzers/3.3.3/microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
