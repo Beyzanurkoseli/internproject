@@ -2,6 +2,13 @@
 
 <h2>Register</h2>
 
+@if (!string.IsNullOrEmpty(ViewBag.Message))
+{
+    <div class="alert alert-success">
+        @ViewBag.Message
+    </div>
+}
+
 <form asp-action="Register" method="post" class="mt-4">
     <div class="mb-3">
         <label for="Ad" class="form-label">Ad:</label>

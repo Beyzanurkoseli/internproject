@@ -35,7 +35,8 @@ namespace UniversiteOgrenciYonetimSistemi.Controllers
                 _context.Ogrenciler.Add(model);
                 _context.SaveChanges();
 
-                // Başarılı kayıt sonrası giriş sayfasına yönlendirir
+                // Başarılı kayıt sonrası mesaj ekleyin ve giriş sayfasına yönlendirin
+                TempData["Message"] = "Registration successful!";
                 return RedirectToAction("Login");
             }
 
@@ -62,7 +63,8 @@ namespace UniversiteOgrenciYonetimSistemi.Controllers
                 // Session'a kullanıcı bilgisini ekler
                 HttpContext.Session.SetInt32("OgrenciId", ogrenci.Id);
 
-                // Kullanıcı profil sayfasına yönlendirir
+                // Giriş başarılı olduğunda mesaj ekleyin ve profil sayfasına yönlendirin
+                TempData["Message"] = "Login successful!";
                 return RedirectToAction("Profile", "Account");
             }
 
@@ -86,9 +88,10 @@ namespace UniversiteOgrenciYonetimSistemi.Controllers
             // Belirtilen ID'ye sahip kullanıcıyı arar
             var ogrenci = _context.Ogrenciler.Find(ogrenciId);
 
-            // Kullanıcı bulunduysa profil sayfasını gösterir
+            // Kullanıcı bulunduysa profil sayfasını gösterir ve mesajı ekrana getirir
             if (ogrenci != null)
             {
+                ViewBag.Message = TempData["Message"];
                 return View(ogrenci);
             }
 
