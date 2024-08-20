@@ -1,5 +1,19 @@
 <h2>Login</h2>
 
+@if (!string.IsNullOrEmpty(ViewBag.Message))
+{
+    <div class="alert alert-success">
+        @ViewBag.Message
+    </div>
+}
+
+@if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+{
+    <div class="alert alert-danger">
+        @ViewBag.ErrorMessage
+    </div>
+}
+
 <form asp-action="Login" method="post" class="mt-4">
     <div class="mb-3">
         <label for="Email" class="form-label">Email:</label>
