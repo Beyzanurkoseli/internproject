@@ -1,0 +1,98 @@
+/* Dikey arka plan resmi stili */
+.bg-image-vertical {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto 100%;
+}
+
+/* Yüksekliği tam ekran olan bölümler için */
+@media (min-width: 1025px) {
+    .h-custom-2 {
+        height: 100%;
+    }
+}
+
+/* Kart stili */
+.card {
+    border-radius: 1rem;
+}
+
+/* Logo ve başlık stili */
+.form-header {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    letter-spacing: 1px;
+    color: #ff6219;
+    display: flex;
+    align-items: center;
+}
+
+.form-header i {
+    margin-right: 0.5rem;
+    font-size: 2rem;
+}
+
+/* Giriş yap ve kayıt ol başlığı */
+.form-title {
+    font-weight: normal;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+/* Giriş yap ve kayıt ol butonları */
+.btn-custom {
+    background-color: #ff6219;
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.btn-custom:hover {
+    background-color: #e55b16;
+    color: #fff;
+}
+
+/* Form outline */
+.form-outline {
+    margin-bottom: 1.5rem;
+}
+
+/* Input alanları */
+.form-control-lg {
+    font-size: 1.25rem;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+}
+
+/* Küçük linkler */
+.small-text {
+    color: #393f81;
+    text-decoration: none;
+}
+
+.small-text:hover {
+    text-decoration: underline;
+}
+
+/* Sayfa arka plan rengi */
+.section-bg {
+    background-color: #9A616D;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Görsel stili */
+.form-image {
+    border-radius: 1rem 0 0 1rem;
+    object-fit: cover;
+    object-position: left;
+    height: 100%;
+}

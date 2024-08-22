@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/UniversiteOgrenciYonetimSistemi.bundle.scp.css"
     },
     {
+      "Id": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/css/custom-styles.css",
+      "PackagePath": "staticwebassets/css/custom-styles.css"
+    },
+    {
       "Id": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },

@@ -1,42 +1,98 @@
 @model UniversiteOgrenciYonetimSistemi.Models.Ogrenci
 
-<h2>Register</h2>
-
-@if (!string.IsNullOrEmpty(ViewBag.Message))
-{
-    <div class="alert alert-success">
-        @ViewBag.Message
-    </div>
+@{
+    ViewData["Title"] = "Register";
 }
 
-<form asp-action="Register" method="post" class="mt-4">
-    <div class="mb-3">
-        <label for="Ad" class="form-label">Ad:</label>
-        <input type="text" id="Ad" name="Ad" class="form-control" required />
+<h2>Register</h2>
+
+<section class="vh-100" style="background-color: #9A616D;">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-xl-10">
+                <div class="card" style="border-radius: 1rem;">
+                    <div class="row g-0">
+                        <div class="col-md-6 col-lg-5 d-none d-md-block">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp"
+                                 alt="Register form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+                        </div>
+                        <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                            <div class="card-body p-4 p-lg-5 text-black">
+
+                                <!-- Başarılı kayıt mesajı -->
+                                @if (!string.IsNullOrEmpty(ViewBag.Message))
+                                {
+                                    <div class="alert alert-success">
+                                        @ViewBag.Message
+                                    </div>
+                                }
+
+                                <!-- Razor form for registration -->
+                                <form asp-action="Register" method="post">
+                                    <div class="d-flex align-items-center mb-3 pb-1">
+                                        <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
+                                        <span class="h1 fw-bold mb-0">Logo</span>
+                                    </div>
+
+                                    <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Create your account</h5>
+
+                                    <!-- Ad alanı -->
+                                    <div class="form-outline mb-4">
+                                        <input type="text" id="Ad" name="Ad" class="form-control form-control-lg" required />
+                                        <label class="form-label" for="Ad">Ad</label>
+                                    </div>
+
+                                    <!-- Soyad alanı -->
+                                    <div class="form-outline mb-4">
+                                        <input type="text" id="Soyad" name="Soyad" class="form-control form-control-lg" required />
+                                        <label class="form-label" for="Soyad">Soyad</label>
+                                    </div>
+
+                                    <!-- Üniversite alanı -->
+                                    <div class="form-outline mb-4">
+                                        <input type="text" id="Universite" name="Universite" class="form-control form-control-lg" required />
+                                        <label class="form-label" for="Universite">Üniversite</label>
+                                    </div>
+
+                                    <!-- Bölüm alanı -->
+                                    <div class="form-outline mb-4">
+                                        <input type="text" id="Bolum" name="Bolum" class="form-control form-control-lg" required />
+                                        <label class="form-label" for="Bolum">Bölüm</label>
+                                    </div>
+
+                                    <!-- Sınıf alanı -->
+                                    <div class="form-outline mb-4">
+                                        <input type="number" id="Sinif" name="Sinif" class="form-control form-control-lg" required />
+                                        <label class="form-label" for="Sinif">Sınıf</label>
+                                    </div>
+
+                                    <!-- Email alanı -->
+                                    <div class="form-outline mb-4">
+                                        <input type="email" id="Email" name="Email" class="form-control form-control-lg" required />
+                                        <label class="form-label" for="Email">Email</label>
+                                    </div>
+
+                                    <!-- Şifre alanı -->
+                                    <div class="form-outline mb-4">
+                                        <input type="password" id="Sifre" name="Sifre" class="form-control form-control-lg" required />
+                                        <label class="form-label" for="Sifre">Şifre</label>
+                                    </div>
+
+                                    <!-- Kayıt Ol butonu -->
+                                    <div class="pt-1 mb-4">
+                                        <button class="btn btn-dark btn-lg btn-block" type="submit">Kayıt Ol</button>
+                                    </div>
+
+                                    <p class="mb-5 pb-lg-2" style="color: #393f81;">Zaten hesabınız var mı? 
+                                        <a href="@Url.Action("Login", "Account")" style="color: #393f81;">Giriş Yap</a>
+                                    </p>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="mb-3">
-        <label for="Soyad" class="form-label">Soyad:</label>
-        <input type="text" id="Soyad" name="Soyad" class="form-control" required />
-    </div>
-    <div class="mb-3">
-        <label for="Universite" class="form-label">Üniversite:</label>
-        <input type="text" id="Universite" name="Universite" class="form-control" required />
-    </div>
-    <div class="mb-3">
-        <label for="Bolum" class="form-label">Bölüm:</label>
-        <input type="text" id="Bolum" name="Bolum" class="form-control" required />
-    </div>
-    <div class="mb-3">
-        <label for="Sinif" class="form-label">Sınıf:</label>
-        <input type="number" id="Sinif" name="Sinif" class="form-control" required />
-    </div>
-    <div class="mb-3">
-        <label for="Email" class="form-label">Email:</label>
-        <input type="email" id="Email" name="Email" class="form-control" required />
-    </div>
-    <div class="mb-3">
-        <label for="Sifre" class="form-label">Şifre:</label>
-        <input type="password" id="Sifre" name="Sifre" class="form-control" required />
-    </div>
-    <button type="submit" class="btn btn-primary">Kayıt Ol</button>
-</form>
+</section>
