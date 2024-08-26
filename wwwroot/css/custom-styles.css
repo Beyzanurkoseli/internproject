@@ -1,3 +1,4 @@
+/* Arka plan resmi stili */
 .bg-image-vertical {
     position: relative;
     overflow: hidden;
@@ -6,24 +7,36 @@
     background-size: auto 100%;
 }
 
+/* Tam ekran yüksekliğe sahip bölümler için */
+.vh-100 {
+    height: 100vh;
+}
+
+/* Daha büyük ekranlarda tam yükseklik ayarlaması */
 @media (min-width: 1025px) {
     .h-custom-2 {
         height: 100%;
     }
 }
 
+/* Kart stili */
 .card {
     border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
-.vh-100 {
-    height: 100vh;
-}
-
+/* Konteyner genişliği ve hizalama */
 .container {
     max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
+/* Satır hizalaması ve yüksekliği */
 .row {
     display: flex;
     align-items: center;
@@ -31,31 +44,39 @@
     height: 100%;
 }
 
+/* Resim stili */
 img.img-fluid {
     border-radius: 1rem 0 0 1rem;
+    height: 100%;
+    object-fit: cover;
 }
 
+/* Metin rengi */
 .text-black {
     color: #000 !important;
 }
 
+/* Form outline ve etiketler */
 .form-outline .form-label {
     display: block;
     margin-bottom: .5rem;
     font-weight: bold;
 }
 
+/* Büyük form kontrol stili */
 .form-outline .form-control-lg {
     font-size: 1.25rem;
     padding: 1.25rem .75rem;
     border-radius: .375rem;
 }
 
+/* Buton genişliği */
 .btn-block {
     display: block;
     width: 100%;
 }
 
+/* Linkler için genel stil */
 a {
     text-decoration: none;
     color: #ff6219;
@@ -63,4 +84,12 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+/* Kart içi düzenleme */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
