@@ -2,54 +2,26 @@
     ViewData["Title"] = "Login";
 }
 
-<section class="vh-100 section-bg">
-    <div class="container h-100">
-        <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col col-xl-10">
-                <div class="card">
-                    <div class="row g-0">
-                        <div class="col-md-6 col-lg-5 d-none d-md-block">
-                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp"
-                                 alt="login form" class="img-fluid form-image" />
-                        </div>
-                        <div class="col-md-6 col-lg-7 d-flex align-items-center">
-                            <div class="card-body p-4 p-lg-5 text-black">
-
-                                <form asp-action="Login" method="post">
-                                    <div class="form-header">
-                                        <i class="fas fa-cubes"></i>
-                                        <span class="h1 fw-bold mb-0">Logo</span>
-                                    </div>
-
-                                    <h5 class="form-title">Sign into your account</h5>
-
-                                    <div class="form-outline mb-4">
-                                        <input type="email" id="Email" name="email" class="form-control form-control-lg" required />
-                                        <label class="form-label" for="Email">Email address</label>
-                                    </div>
-
-                                    <div class="form-outline mb-4">
-                                        <input type="password" id="Sifre" name="sifre" class="form-control form-control-lg" required />
-                                        <label class="form-label" for="Sifre">Password</label>
-                                    </div>
-
-                                    <div class="pt-1 mb-4">
-                                        <button class="btn btn-custom btn-lg btn-block" type="submit">Login</button>
-                                    </div>
-
-                                    <a class="small small-text" href="#!">Forgot password?</a>
-                                    <p class="mb-5 pb-lg-2 small-text">Don't have an account? 
-                                        <a href="@Url.Action("Register", "Account")" class="small-text">Register here</a>
-                                    </p>
-                                    <a href="#!" class="small small-text">Terms of use.</a>
-                                    <a href="#!" class="small small-text">Privacy policy</a>
-                                </form>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<form asp-action="Login" method="post" style="border: 3px solid #f1f1f1; max-width: 400px; margin: auto; padding: 20px;">
+    <div class="imgcontainer">
+        <img src="~/images/avatar.png" alt="Avatar" class="avatar" style="width: 40%; border-radius: 50%; margin: 24px 0 12px 0; display: block; margin-left: auto; margin-right: auto;">
     </div>
-</section>
+
+    <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="email" id="Email" required style="width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; box-sizing: border-box;">
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="sifre" id="Sifre" required style="width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; box-sizing: border-box;">
+
+        <button type="submit" style="background-color: #04AA6D; color: white; padding: 14px 20px; margin: 8px 0; border: none; cursor: pointer; width: 100%;">Login</button>
+        <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1; padding: 16px;">
+        <button type="button" class="cancelbtn" style="width: auto; padding: 10px 18px; background-color: #f44336;">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+</form>

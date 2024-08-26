@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kfO1nxIXxKXoL/YzxZlJ4FXX7RhGwdJc+iJf8fimNGA=",
+  "Hash": "DiaL9pu0VQ375+iwBw6XNdcQJUDt1Ho3ZJnaaxM2hnE=",
   "Source": "UniversiteOgrenciYonetimSistemi",
   "BasePath": "_content/UniversiteOgrenciYonetimSistemi",
   "Mode": "Default",
@@ -93,6 +93,25 @@
       "OriginalItemSpec": "wwwroot/css/site.css"
     },
     {
+      "Identity": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/custom-modal.css",
+      "SourceId": "UniversiteOgrenciYonetimSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/",
+      "BasePath": "_content/UniversiteOgrenciYonetimSistemi",
+      "RelativePath": "custom-modal.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/custom-modal.css"
+    },
+    {
       "Identity": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/favicon.ico",
       "SourceId": "UniversiteOgrenciYonetimSistemi",
       "SourceType": "Discovered",
@@ -110,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/images/avatar.png",
+      "SourceId": "UniversiteOgrenciYonetimSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/",
+      "BasePath": "_content/UniversiteOgrenciYonetimSistemi",
+      "RelativePath": "images/avatar.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/avatar.png"
     },
     {
       "Identity": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/js/site.js",

@@ -13,8 +13,16 @@
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
+      "Id": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/custom-modal.css",
+      "PackagePath": "staticwebassets/custom-modal.css"
+    },
+    {
       "Id": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/images/avatar.png",
+      "PackagePath": "staticwebassets/images/avatar.png"
     },
     {
       "Id": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/js/site.js",

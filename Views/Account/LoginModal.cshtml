@@ -1,0 +1,36 @@
+@{
+    ViewData["Title"] = "Login Modal";
+}
+
+<!-- Modal Trigger Button -->
+<button style="display: block; margin: 20px auto; padding: 10px 20px; background-color: #04AA6D; color: white; border: none; cursor: pointer;">Login</button>
+
+<!-- Modal Structure -->
+<div id="myModal" class="custom-modal" style="display: block;"> <!-- Sayfa yüklendiğinde modal görünür olacak -->
+  <span class="custom-close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="custom-modal-content" action="@Url.Action("Login", "Account")" method="post">
+    <div class="custom-imgcontainer">
+      <img src="~/images/avatar.png" alt="Avatar" class="custom-avatar">
+    </div>
+
+    <div class="custom-container">
+      <label for="Email"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="email" id="Email" required>
+
+      <label for="Sifre"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="sifre" id="Sifre" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="custom-container custom-container-light">
+      <button type="button" class="custom-cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>

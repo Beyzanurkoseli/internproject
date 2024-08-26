@@ -4,7 +4,7 @@
     overflow: hidden;
     background-repeat: no-repeat;
     background-position: right center;
-    background-size: auto 100%;
+    background-size: cover; /* Görseli tam kaplama yapıyoruz */
 }
 
 /* Tam ekran yüksekliğe sahip bölümler için */
@@ -48,6 +48,7 @@
 img.img-fluid {
     border-radius: 1rem 0 0 1rem;
     height: 100%;
+    width: 100%; /* Genişliği de tam yapıyoruz */
     object-fit: cover;
 }
 

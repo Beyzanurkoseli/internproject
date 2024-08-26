@@ -1,0 +1,101 @@
+/* Modal Arkaplanı */
+.custom-modal {
+    display: none; /* Varsayılan olarak gizli */
+    position: fixed; /* Sayfanın sabit kalması */
+    z-index: 1; /* Üstte kalması */
+    left: 0;
+    top: 0;
+    width: 100%; /* Tam genişlik */
+    height: 100%; /* Tam yükseklik */
+    overflow: auto; /* Gerekirse kaydırma */
+    background-color: rgb(0,0,0); /* Yedek arka plan rengi */
+    background-color: rgba(0,0,0,0.4); /* Opak siyah arka plan */
+    padding-top: 60px;
+}
+
+/* Modal İçerik/Kutu */
+.custom-modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* Ortaya hizalama */
+    padding: 20px; /* İç kenar boşluğu */
+    border: 1px solid #888;
+    width: 80%; /* Ekran boyutuna göre genişlik */
+    max-width: 500px; /* Maksimum genişlik */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Gölge efekti */
+    border-radius: 10px; /* Köşelerin yuvarlatılması */
+}
+
+/* Kapatma Butonu */
+.custom-close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.custom-close:hover,
+.custom-close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Resim Konteyneri */
+.custom-imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar Görseli */
+.custom-avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* Container */
+.custom-container {
+    padding: 16px;
+}
+
+.custom-container-light {
+    background-color: #f1f1f1;
+}
+
+/* Butonlar */
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px; /* Butonların köşelerinin yuvarlatılması */
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.custom-cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Şifre Unutma Metni */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .custom-cancelbtn {
+        width: 100%;
+    }
+}
