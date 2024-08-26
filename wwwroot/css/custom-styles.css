@@ -1,4 +1,3 @@
-/* Dikey arka plan resmi stili */
 .bg-image-vertical {
     position: relative;
     overflow: hidden;
@@ -7,92 +6,61 @@
     background-size: auto 100%;
 }
 
-/* Yüksekliği tam ekran olan bölümler için */
 @media (min-width: 1025px) {
     .h-custom-2 {
         height: 100%;
     }
 }
 
-/* Kart stili */
 .card {
     border-radius: 1rem;
 }
 
-/* Logo ve başlık stili */
-.form-header {
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
-    letter-spacing: 1px;
-    color: #ff6219;
+.vh-100 {
+    height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.row {
     display: flex;
     align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
-.form-header i {
-    margin-right: 0.5rem;
-    font-size: 2rem;
+img.img-fluid {
+    border-radius: 1rem 0 0 1rem;
 }
 
-/* Giriş yap ve kayıt ol başlığı */
-.form-title {
-    font-weight: normal;
-    margin-bottom: 1.5rem;
-    padding-bottom: 1rem;
-    letter-spacing: 1px;
+.text-black {
+    color: #000 !important;
 }
 
-/* Giriş yap ve kayıt ol butonları */
-.btn-custom {
-    background-color: #ff6219;
-    color: #fff;
+.form-outline .form-label {
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+
+.form-outline .form-control-lg {
     font-size: 1.25rem;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
+    padding: 1.25rem .75rem;
+    border-radius: .375rem;
+}
+
+.btn-block {
+    display: block;
     width: 100%;
 }
 
-.btn-custom:hover {
-    background-color: #e55b16;
-    color: #fff;
-}
-
-/* Form outline */
-.form-outline {
-    margin-bottom: 1.5rem;
-}
-
-/* Input alanları */
-.form-control-lg {
-    font-size: 1.25rem;
-    padding: 0.75rem;
-    border-radius: 0.5rem;
-}
-
-/* Küçük linkler */
-.small-text {
-    color: #393f81;
+a {
     text-decoration: none;
+    color: #ff6219;
 }
 
-.small-text:hover {
+a:hover {
     text-decoration: underline;
-}
-
-/* Sayfa arka plan rengi */
-.section-bg {
-    background-color: #9A616D;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Görsel stili */
-.form-image {
-    border-radius: 1rem 0 0 1rem;
-    object-fit: cover;
-    object-position: left;
-    height: 100%;
 }
