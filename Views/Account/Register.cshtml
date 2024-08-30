@@ -1,86 +1,43 @@
-@model UniversiteOgrenciYonetimSistemi.Models.Ogrenci
-
 @{
     ViewData["Title"] = "Register";
 }
 
-<section class="vh-100" style="background-color: #9A616D;">
-    <div class="container py-5 h-100">
-        <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col col-xl-10">
-                <div class="card" style="border-radius: 1rem;">
-                    <div class="row g-0">
-                        <div class="col-md-6 col-lg-5 d-none d-md-block">
-                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp"
-                                 alt="Register form" class="img-fluid" />
-                        </div>
-                        <div class="col-md-6 col-lg-7 d-flex align-items-center">
-                            <div class="card-body p-4 p-lg-5 text-black">
+<form asp-action="Register" method="post" style="border: 3px solid #f1f1f1; max-width: 400px; margin: auto; padding: 20px;">
+    <h2 style="text-align: center;">Please fill in this form to create an account.</h2>
 
-                                @if (!string.IsNullOrEmpty(ViewBag.Message))
-                                {
-                                    <div class="alert alert-success">
-                                        @ViewBag.Message
-                                    </div>
-                                }
-
-                                <form asp-action="Register" method="post">
-                                    <div class="d-flex align-items-center mb-3 pb-1">
-                                        <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
-                                        <span class="h1 fw-bold mb-0">Logo</span>
-                                    </div>
-
-                                    <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Create your account</h5>
-
-                                    <div class="form-outline mb-4">
-                                        <input type="text" id="Ad" name="Ad" class="form-control form-control-lg" required />
-                                        <label class="form-label" for="Ad">Ad</label>
-                                    </div>
-
-                                    <div class="form-outline mb-4">
-                                        <input type="text" id="Soyad" name="Soyad" class="form-control form-control-lg" required />
-                                        <label class="form-label" for="Soyad">Soyad</label>
-                                    </div>
-
-                                    <div class="form-outline mb-4">
-                                        <input type="text" id="Universite" name="Universite" class="form-control form-control-lg" required />
-                                        <label class="form-label" for="Universite">Üniversite</label>
-                                    </div>
-
-                                    <div class="form-outline mb-4">
-                                        <input type="text" id="Bolum" name="Bolum" class="form-control form-control-lg" required />
-                                        <label class="form-label" for="Bolum">Bölüm</label>
-                                    </div>
-
-                                    <div class="form-outline mb-4">
-                                        <input type="number" id="Sinif" name="Sinif" class="form-control form-control-lg" required />
-                                        <label class="form-label" for="Sinif">Sınıf</label>
-                                    </div>
-
-                                    <div class="form-outline mb-4">
-                                        <input type="email" id="Email" name="Email" class="form-control form-control-lg" required />
-                                        <label class="form-label" for="Email">Email</label>
-                                    </div>
-
-                                    <div class="form-outline mb-4">
-                                        <input type="password" id="Sifre" name="Sifre" class="form-control form-control-lg" required />
-                                        <label class="form-label" for="Sifre">Şifre</label>
-                                    </div>
-
-                                    <div class="pt-1 mb-4">
-                                        <button class="btn btn-dark btn-lg btn-block" type="submit">Kayıt Ol</button>
-                                    </div>
-
-                                    <p class="mb-5 pb-lg-2" style="color: #393f81;">Zaten hesabınız var mı? 
-                                        <a href="@Url.Action("Login", "Account")" style="color: #393f81;">Giriş Yap</a>
-                                    </p>
-                                </form>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="imgcontainer">
+        <img src="~/images/avatar.png" alt="Avatar" class="avatar" style="width: 40%; border-radius: 50%; margin: 24px 0 12px 0; display: block; margin-left: auto; margin-right: auto;">
     </div>
-</section>
+
+    <div class="container">
+        <label for="ad"><b>First Name</b></label>
+        <input type="text" placeholder="Enter First Name" name="ad" id="ad" required style="width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; box-sizing: border-box;">
+
+        <label for="soyad"><b>Last Name</b></label>
+        <input type="text" placeholder="Enter Last Name" name="soyad" id="soyad" required style="width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; box-sizing: border-box;">
+
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" name="email" id="email" required style="width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; box-sizing: border-box;">
+
+        <label for="universite"><b>University</b></label>
+        <input type="text" placeholder="Enter University" name="universite" id="universite" required style="width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; box-sizing: border-box;">
+
+        <label for="bolum"><b>Department</b></label>
+        <input type="text" placeholder="Enter Department" name="bolum" id="bolum" required style="width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; box-sizing: border-box;">
+
+        <label for="sinif"><b>Class</b></label>
+        <select name="sinif" id="sinif" required style="width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; box-sizing: border-box;">
+            <option value="1">1st Year</option>
+            <option value="2">2nd Year</option>
+            <option value="3">3rd Year</option>
+            <option value="4">4th Year</option>
+        </select>
+
+        <button type="submit" style="background-color: #04AA6D; color: white; padding: 14px 20px; margin: 8px 0; border: none; cursor: pointer; width: 100%;">Register</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1; padding: 16px;">
+        <button type="button" class="cancelbtn" style="width: auto; padding: 10px 18px; background-color: #f44336;">Cancel</button>
+        <span class="psw">Already have an account? <a href="#">Sign in</a>.</span>
+    </div>
+</form>

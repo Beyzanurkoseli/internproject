@@ -6,6 +6,7 @@
 /Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/bin/Debug/net8.0/UniversiteOgrenciYonetimSistemi.runtimeconfig.json
 /Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/bin/Debug/net8.0/UniversiteOgrenciYonetimSistemi.dll
 /Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/bin/Debug/net8.0/UniversiteOgrenciYonetimSistemi.pdb
+/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/bin/Debug/net8.0/BCrypt.Net-Next.dll
 /Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/bin/Debug/net8.0/Humanizer.dll
 /Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll
 /Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/bin/Debug/net8.0/Microsoft.CodeAnalysis.dll
@@ -86,6 +87,7 @@
 /Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/obj/Debug/net8.0/UniversiteOgrenciYonetimSistemi.MvcApplicationPartsAssemblyInfo.cache
 /Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/obj/Debug/net8.0/UniversiteOgrenciYonetimSistemi.RazorAssemblyInfo.cache
 /Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/obj/Debug/net8.0/UniversiteOgrenciYonetimSistemi.RazorAssemblyInfo.cs
+/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/obj/Debug/net8.0/UniversiteOgrenciYonetimSistemi.sourcelink.json
 /Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/obj/Debug/net8.0/staticwebassets.build.json
 /Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/obj/Debug/net8.0/staticwebassets.development.json
 /Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/obj/Debug/net8.0/staticwebassets/msbuild.UniversiteOgrenciYonetimSistemi.Microsoft.AspNetCore.StaticWebAssets.props
@@ -102,5 +104,3 @@
 /Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/obj/Debug/net8.0/UniversiteOgrenciYonetimSistemi.pdb
 /Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/obj/Debug/net8.0/UniversiteOgrenciYonetimSistemi.genruntimeconfig.cache
 /Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/obj/Debug/net8.0/ref/UniversiteOgrenciYonetimSistemi.dll
-/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/bin/Debug/net8.0/BCrypt.Net-Next.dll
-/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/obj/Debug/net8.0/UniversiteOgrenciYonetimSistemi.sourcelink.json

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DiaL9pu0VQ375+iwBw6XNdcQJUDt1Ho3ZJnaaxM2hnE=",
+  "Hash": "Rba7ZrGtPM5rogx5i7GN5oPoM4p10fyXJJIoN59LLng=",
   "Source": "UniversiteOgrenciYonetimSistemi",
   "BasePath": "_content/UniversiteOgrenciYonetimSistemi",
   "Mode": "Default",
@@ -55,6 +55,25 @@
       "OriginalItemSpec": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/obj/Debug/net8.0/scopedcss/projectbundle/UniversiteOgrenciYonetimSistemi.bundle.scp.css"
     },
     {
+      "Identity": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/css/custom-modal.css",
+      "SourceId": "UniversiteOgrenciYonetimSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/",
+      "BasePath": "_content/UniversiteOgrenciYonetimSistemi",
+      "RelativePath": "css/custom-modal.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/custom-modal.css"
+    },
+    {
       "Identity": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/css/custom-styles.css",
       "SourceId": "UniversiteOgrenciYonetimSistemi",
       "SourceType": "Discovered",
@@ -72,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/custom-styles.css"
+    },
+    {
+      "Identity": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/css/register-modal.css",
+      "SourceId": "UniversiteOgrenciYonetimSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/",
+      "BasePath": "_content/UniversiteOgrenciYonetimSistemi",
+      "RelativePath": "css/register-modal.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/register-modal.css"
     },
     {
       "Identity": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/css/site.css",
@@ -1250,6 +1288,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Identity": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/register.css",
+      "SourceId": "UniversiteOgrenciYonetimSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/",
+      "BasePath": "_content/UniversiteOgrenciYonetimSistemi",
+      "RelativePath": "register.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/register.css"
     }
   ]
 }

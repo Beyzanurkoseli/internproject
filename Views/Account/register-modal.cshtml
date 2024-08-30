@@ -1,0 +1,50 @@
+@{
+    ViewData["Title"] = "Register Modal";
+}
+
+<!-- Modal Trigger Button -->
+<button style="display: block; margin: 20px auto; padding: 10px 20px; background-color: #04AA6D; color: white; border: none; cursor: pointer;">Register</button>
+
+<!-- Modal Structure -->
+<div id="registerModal" class="custom-modal" style="display: block;"> <!-- Sayfa yüklendiğinde modal görünür olacak -->
+  <span class="custom-close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="custom-modal-content" action="@Url.Action("Register", "Account")" method="post">
+    <div class="custom-imgcontainer">
+      <img src="~/images/avatar.png" alt="Avatar" class="custom-avatar">
+    </div>
+
+    <div class="custom-container">
+      <label for="ad"><b>First Name</b></label>
+      <input type="text" placeholder="Enter First Name" name="ad" id="ad" required>
+
+      <label for="soyad"><b>Last Name</b></label>
+      <input type="text" placeholder="Enter Last Name" name="soyad" id="soyad" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="email" placeholder="Enter Email" name="email" id="email" required>
+
+      <label for="universite"><b>University</b></label>
+      <input type="text" placeholder="Enter University" name="universite" id="universite" required>
+
+      <label for="bolum"><b>Department</b></label>
+      <input type="text" placeholder="Enter Department" name="bolum" id="bolum" required>
+
+      <label for="sinif"><b>Class</b></label>
+      <select name="sinif" id="sinif" required>
+        <option value="1">1st Year</option>
+        <option value="2">2nd Year</option>
+        <option value="3">3rd Year</option>
+        <option value="4">4th Year</option>
+      </select>
+
+      <button type="submit">Register</button>
+    </div>
+
+    <div class="custom-container custom-container-light">
+      <button type="button" class="custom-cancelbtn">Cancel</button>
+      <span class="psw">Already have an account? <a href="#">Sign in</a>.</span>
+    </div>
+  </form>
+</div>

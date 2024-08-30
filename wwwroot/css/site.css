@@ -1,22 +1,66 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
+/* Site Adı (Title) */
+.site-title {
+  font-size: 2rem; /* Boyutu biraz küçültüyoruz */
+  font-weight: bold; /* Kalın yazı */
+  color: white; /* Beyaz renk */
+  background-color: #333; /* Arka plan rengini gri yapıyoruz */
+  text-align: center; /* Ortalanmış */
+  margin: 0; /* Üst ve alt boşlukları kaldırıyoruz */
+  padding: 10px 0; /* Üst ve alt boşluk ekliyoruz */
+  z-index: 1000; /* Üstte görünmesini sağlar */
   position: relative;
-  min-height: 100%;
 }
 
-body {
-  margin-bottom: 60px;
+/* Navbar Düzenleme */
+.navbar {
+  background-color: #333; /* Navbar arka plan rengi koyu gri */
+  padding: 0; /* Navbar'da ekstra boşlukları kaldır */
+}
+
+.navbar-nav {
+  display: flex; /* Liste öğelerini yatay hizala */
+  flex-direction: row; /* Satır yönünde hizalama */
+  list-style-type: none; /* Varsayılan madde işaretlerini kaldır */
+  margin: 0; /* Kenar boşluklarını kaldır */
+  padding: 0; /* İçerik boşluklarını kaldır */
+}
+
+.navbar-nav .nav-item {
+  margin-right: 1rem; /* Menü öğeleri arasında boşluk bırak */
+}
+
+.navbar-nav .nav-link {
+  color: white !important; /* Link rengini beyaz yap */
+  padding: 14px 16px; /* Linklerin iç boşlukları */
+  text-decoration: none; /* Link alt çizgisini kaldır */
+  text-align: center; /* Link içeriğini ortala */
+  background-color: transparent; /* Linklerin varsayılan arka plan rengi */
+}
+
+.navbar-nav .nav-link.active {
+  background-color: #04AA6D; /* Aktif link arka plan rengi */
+  color: white !important; /* Aktif link yazı rengi */
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #04AA6D; /* Link üzerine gelindiğinde arka plan rengi */
+}
+
+.container-fluid {
+  padding: 0 15px; /* Navbar'daki boşlukları yönetmek için padding */
+}
+
+/* Footer Stili */
+.footer {
+  position: fixed; /* Footer'ı sayfanın en altına sabitler */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  text-align: left; /* Sol tarafa hizalama */
+  padding-left: 10px; /* Sol kenardan biraz boşluk bırak */
+  font-size: 0.9rem;
+  color: #333;
+  border-top: 1px solid #e5e5e5;
+  line-height: 60px;
 }

@@ -5,8 +5,16 @@
       "PackagePath": "staticwebassets/UniversiteOgrenciYonetimSistemi.bundle.scp.css"
     },
     {
+      "Id": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/css/custom-modal.css",
+      "PackagePath": "staticwebassets/css/custom-modal.css"
+    },
+    {
       "Id": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/css/custom-styles.css",
       "PackagePath": "staticwebassets/css/custom-styles.css"
+    },
+    {
+      "Id": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/css/register-modal.css",
+      "PackagePath": "staticwebassets/css/register-modal.css"
     },
     {
       "Id": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/css/site.css",
@@ -255,6 +263,10 @@
     {
       "Id": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/lib/jquery/dist/jquery.min.map",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/register.css",
+      "PackagePath": "staticwebassets/register.css"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.UniversiteOgrenciYonetimSistemi.Microsoft.AspNetCore.StaticWebAssets.props",
