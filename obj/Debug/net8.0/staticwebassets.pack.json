@@ -29,8 +29,20 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/images/2024_yks.jpg",
+      "PackagePath": "staticwebassets/images/2024_yks.jpg"
+    },
+    {
+      "Id": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/images/akademik_takvim.jpg",
+      "PackagePath": "staticwebassets/images/akademik_takvim.jpg"
+    },
+    {
       "Id": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/images/avatar.png",
       "PackagePath": "staticwebassets/images/avatar.png"
+    },
+    {
+      "Id": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/images/universite_kayit.png",
+      "PackagePath": "staticwebassets/images/universite_kayit.png"
     },
     {
       "Id": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/js/site.js",
