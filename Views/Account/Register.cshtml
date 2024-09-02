@@ -3,7 +3,7 @@
 }
 
 <form asp-action="Register" method="post" style="border: 3px solid #f1f1f1; max-width: 400px; margin: auto; padding: 20px;">
-    <h2 style="text-align: center;">Please fill in this form to create an account.</h2>
+    <h2 style="text-align: center;">Please fill in this form to create an account!</h2>
 
     <div class="imgcontainer">
         <img src="~/images/avatar.png" alt="Avatar" class="avatar" style="width: 40%; border-radius: 50%; margin: 24px 0 12px 0; display: block; margin-left: auto; margin-right: auto;">
@@ -33,11 +33,14 @@
             <option value="4">4th Year</option>
         </select>
 
+        <label for="sifre"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="sifre" id="sifre" required style="width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; box-sizing: border-box;">
+
         <button type="submit" style="background-color: #04AA6D; color: white; padding: 14px 20px; margin: 8px 0; border: none; cursor: pointer; width: 100%;">Register</button>
     </div>
 
     <div class="container" style="background-color:#f1f1f1; padding: 16px;">
         <button type="button" class="cancelbtn" style="width: auto; padding: 10px 18px; background-color: #f44336;">Cancel</button>
-        <span class="psw">Already have an account? <a href="#">Sign in</a>.</span>
+        <span class="psw">Already have an account? <a href="/Account/Login">Sign in</a>.</span>
     </div>
 </form>

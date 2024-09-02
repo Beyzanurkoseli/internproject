@@ -2,7 +2,7 @@
 .site-title {
   font-size: 2rem; /* Başlık boyutu */
   font-weight: bold; /* Kalın yazı */
-  color: white; /* Beyaz renk */
+  color: white !important; /* Beyaz renk */
   background-color: #333; /* Arka plan rengini gri yapıyoruz */
   text-align: center; /* Ortalanmış */
   margin: 0; /* Üst ve alt boşlukları kaldırıyoruz */
@@ -80,32 +80,99 @@
 
 /* Footer Stili */
 .footer {
-  position: fixed; /* Footer'ı sayfanın en altına sabitler */
-  bottom: 0;
+  position: fixed; /* Footer'ı sayfanın altına sabitler */
   left: 0;
+  bottom: 0;
   width: 100%;
   background-color: #f8f9fa;
-  text-align: left; /* Sol tarafa hizalama */
-  padding-left: 10px; /* Sol kenardan biraz boşluk bırak */
-  font-size: 0.9rem;
+  text-align: left; /* Footer metnini sola hizalar */
+  
+  font-size: 0.9rem; /* Yazı boyutunu ayarlar */
   color: #333;
   border-top: 1px solid #e5e5e5;
-  line-height: 60px;
+  line-height: 1px; /* Footer yüksekliğini ayarla */
+  padding: 1px 0; /* Üst ve alt boşlukları küçült */
 }
 
 /* Sayfa hizalaması */
 .container {
   margin-top: 20px;
+  max-width: 1200px; /* İçeriğin sığması için genişlik ayarı */
+  margin-left: auto; /* Ortalamak için */
+  margin-right: auto; /* Ortalamak için */
+  padding-bottom: 60px; /* Footer'ın içeriğe çarpmasını önlemek için altta boşluk bırakır */
 }
 
 .row {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; /* Kartların alt alta sıralanmasını sağlar */
+  justify-content: space-around; /* Kartları eşit şekilde yayar */
+  align-items: flex-start; /* Kartları üstten hizalar */
+  flex-wrap: nowrap; /* Kartların yan yana sıralanmasını sağlar */
 }
 
 h1 {
   margin-bottom: 40px;
   font-weight: bold;
+  text-align: center; /* Başlığı ortalar */
+}
+
+/* Mor renkteki yazıları gri yap */
+h2, h3, h4, h5, h6, p, a, span, div {
+  color: #333 !important; /* Navbarın gri rengi */
+}
+
+/* UniversiteOgrenciYonetimSistemi başlığı için beyaz renk */
+.site-title {
+  color: white !important; /* Beyaz renk */
+}
+
+/* Register ve Login sayfaları için özel düzenlemeler */
+.form-control {
+  width: 100%; /* Genişliği form elemanlarının sığacağı şekilde ayarla */
+  margin-bottom: 15px; /* Form elemanları arasına boşluk ekle */
+}
+
+.btn-block {
+  width: 100%; /* Buton genişliğini yüzde yüz yap */
+}
+
+/* Privacy Sayfası için düzenlemeler */
+.container-privacy {
+  max-width: 800px; /* İçeriğin sığması için genişlik ayarı */
+  padding: 20px; /* İçerik için iç boşluk */
+  margin-left: 0; /* Privacy sayfasındaki içeriği sola hizala */
+  margin-right: auto;
+}
+
+.container-privacy h1, .container-privacy p {
+  text-align: left; /* Yazıları sola hizala */
+}
+
+/* Profil Sayfası için Özel Düzenlemeler */
+.profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.success-message {
+    color: #4CAF50;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.profile-info p strong {
+    display: inline-block;
+    width: 100px;
 }

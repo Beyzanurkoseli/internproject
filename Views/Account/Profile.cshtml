@@ -9,7 +9,7 @@
     </div>
 }
 
-<div>
+<div class="profile-container">
     <p><strong>Ad:</strong> @Model.Ad</p>
     <p><strong>Soyad:</strong> @Model.Soyad</p>
     <p><strong>Üniversite:</strong> @Model.Universite</p>
@@ -17,3 +17,33 @@
     <p><strong>Sınıf:</strong> @Model.Sinif</p>
     <p><strong>Email:</strong> @Model.Email</p>
 </div>
+
+<style>
+    .profile-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .alert-success {
+        color: #4CAF50;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .profile-container p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+
+    .profile-container p strong {
+        display: inline-block;
+        width: 100px;
+    }
+</style>

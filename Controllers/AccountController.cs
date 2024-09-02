@@ -35,9 +35,12 @@ namespace UniversiteOgrenciYonetimSistemi.Controllers
                 _context.Ogrenciler.Add(model);
                 _context.SaveChanges();
 
+                // Session'a kullanıcı bilgisini ekler
+                HttpContext.Session.SetInt32("OgrenciId", model.Id);
+
                 // Başarılı kayıt sonrası mesaj ekleyin ve giriş sayfasına yönlendirin
                 TempData["Message"] = "Registration successful!";
-                return RedirectToAction("Login");
+                return RedirectToAction("Profile");
             }
 
             // Model geçersizse, kayıt sayfasını tekrar gösterir

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uDWF4oUFbPGCQSdluYKzQJAYAsl6odaa8g8LPac3IMY=",
+  "Hash": "SZ7w/ArkY0pDES8ynndEqWoRSiCDbX3rErSyfdIgcnM=",
   "Source": "UniversiteOgrenciYonetimSistemi",
   "BasePath": "_content/UniversiteOgrenciYonetimSistemi",
   "Mode": "Default",
@@ -169,12 +169,12 @@
       "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
-      "Identity": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/images/2024_yks.jpg",
+      "Identity": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/images/akademik_takvim.png",
       "SourceId": "UniversiteOgrenciYonetimSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/",
       "BasePath": "_content/UniversiteOgrenciYonetimSistemi",
-      "RelativePath": "images/2024_yks.jpg",
+      "RelativePath": "images/akademik_takvim.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -185,26 +185,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/2024_yks.jpg"
-    },
-    {
-      "Identity": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/images/akademik_takvim.jpg",
-      "SourceId": "UniversiteOgrenciYonetimSistemi",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/",
-      "BasePath": "_content/UniversiteOgrenciYonetimSistemi",
-      "RelativePath": "images/akademik_takvim.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/akademik_takvim.jpg"
+      "OriginalItemSpec": "wwwroot/images/akademik_takvim.png"
     },
     {
       "Identity": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/images/avatar.png",
@@ -226,12 +207,12 @@
       "OriginalItemSpec": "wwwroot/images/avatar.png"
     },
     {
-      "Identity": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/images/universite_kayit.png",
+      "Identity": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/images/osym.jpg",
       "SourceId": "UniversiteOgrenciYonetimSistemi",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/",
       "BasePath": "_content/UniversiteOgrenciYonetimSistemi",
-      "RelativePath": "images/universite_kayit.png",
+      "RelativePath": "images/osym.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -242,7 +223,26 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/universite_kayit.png"
+      "OriginalItemSpec": "wwwroot/images/osym.jpg"
+    },
+    {
+      "Identity": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/images/universite_kayit.jpg",
+      "SourceId": "UniversiteOgrenciYonetimSistemi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/",
+      "BasePath": "_content/UniversiteOgrenciYonetimSistemi",
+      "RelativePath": "images/universite_kayit.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/universite_kayit.jpg"
     },
     {
       "Identity": "/Users/beyza/Documents/UniversiteOgrenciYonetimSistemi/wwwroot/js/site.js",
